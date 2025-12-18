@@ -7,7 +7,7 @@ pipeline {
                 echo 'Waiting for service to initialize...' 
                 sleep time: 180, unit: 'SECONDS'
                 script {
-                    sh '''whyer2005/my-image-12112025:main'''
+                    sh '''docker pull whyer2005/my-image-12112025:main'''
                 }
             }
         }
@@ -30,3 +30,4 @@ pipeline {
     }
 
 }
+

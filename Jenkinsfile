@@ -5,7 +5,7 @@ pipeline {
         stage('Pull Docker Image') {
             steps {
                 echo 'Waiting for service to initialize...' 
-                sleep time: 120, unit: 'SECONDS'
+                sleep time: 180, unit: 'SECONDS'
                 script {
                     sh '''docker pull chontipanpepe/my-image:main'''
                 }
